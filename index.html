@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+	<style>
+		body{
+			background-image: url(https://images.unsplash.com/photo-1541140134513-85a161dc4a00?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JleSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		#profile{
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		}
+		.col-md-4{
+			background-color: white;
+			width: 700px;
+			height: 475px;
+		}
+	</style>
+	<title>Q4 Quiz 1</title>
+	<body>
+		<center><br><br>
+			<div id="login-container">
+				<div class="col-md-4"><br><br>
+					<img id="profile" src="profile.png"><br><br>
+					<form action="mainpage.html" class="form-group">
+							<label id="email"></label><br>
+							<input type="text" class="form-control bg-light" name="email" id="email">
+							<br>
+							<label id="password"></label><br>
+							<input type="text" class="form-control bg-light" name="password" id="password">
+							<br>
+							<a href="mainpage.html"><button class="btn btn-success">Login</button></a>
+							<a href="#"><button type="reset" class="btn btn-light">Cancel</button></a>
+						</form>
+					</div>
+				</div>
+				<p id="welcome"></p>
+		</center>
+		<script type="text/javascript">
+			var welcome = "Welcome to my website!"; //welcome message
+
+			window.alert(welcome);
+			document.getElementById("email").innerHTML = "Email:"; //label for email input box
+			document.getElementById("password").innerHTML = "Password:"; //label for password input box
+		</script>
+	</body>
